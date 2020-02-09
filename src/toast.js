@@ -25,7 +25,11 @@ function createToastElement({ message, type, position, showCloseButton }) {
 
   if (showCloseButton) {
     const toastBtn = document.createElement("button");
-    toastBtn.textContent = "Close";
+    toastBtn.className = "ui-toast__close";
+    const toastBtnText = document.createElement("span");
+    toastBtnText.textContent = "Close";
+    toastBtnText.className = "ui-toast__close-text";
+    toastBtn.appendChild(toastBtnText);
     toast.appendChild(toastBtn);
   }
   return toast;

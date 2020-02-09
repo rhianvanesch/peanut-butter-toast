@@ -1,0 +1,39 @@
+{
+  "name": "peanut-butter-toast",
+  "version": "1.0.0",
+  "description": "",
+  "main": "toast.js",
+  "module": "src/toast.js",
+  "scripts": {
+    "build": "run-p css js",
+    "css": "postcss src/toast.css -o dist/toast.min.css",
+    "css:watch": "postcss src/toast.css -o dist/toast.min.css -w",
+    "js": "rollup -c",
+    "js:watch": "rollup -c -w",
+    "watch": "run-p css:watch js:watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/escherina/peanut-butter-toast.git"
+  },
+  "keywords": [
+    "toast"
+  ],
+  "author": "Rhian van Esch <rhian@rhianvanesch.com> (https://rhianvanesch.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/escherina/peanut-butter-toast/issues"
+  },
+  "homepage": "https://github.com/escherina/peanut-butter-toast#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "core-js": "^3.6.4",
+    "cssnano": "^4.1.10",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0",
+    "rollup": "^1.31.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-terser": "^5.2.0"
+  }
+}

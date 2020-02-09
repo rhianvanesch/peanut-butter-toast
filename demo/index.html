@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Peanut butter toast</title>
   <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="../toast.css">
+  <link rel="stylesheet" href="../dist/toast.min.css">
 </head>
 <body>
   <h1><code>peanut-butter-toast</code></h1>
@@ -22,7 +22,7 @@
   
       <label for="position-center-top">
         <input type="radio" name="position" id="position-center-top" value="center-top" checked>
-        Centre top
+        Center top
       </label>
   
       <label for="position-right-top">
@@ -37,7 +37,7 @@
   
       <label for="position-center-bottom">
         <input type="radio" name="position" id="position-center-bottom" value="center-bottom">
-        Centre bottom
+        Center bottom
       </label>
   
       <label for="position-right-bottom">
@@ -74,20 +74,20 @@
       <legend>Dismiss</legend>
 
       <label for="auto-dismiss">
-        <input type="checkbox" name="autoDismiss" id="auto-dismiss" checked>
+        <input type="checkbox" name="autoDismiss" id="auto-dismiss">
         Auto-dismiss?
       </label>
 
       <label for="timeout">
         Dismiss after (ms)
-        <input type="number" name="timeout" id="timeout" value="2000" min="0">
+        <input type="number" name="timeout" id="timeout" value="5000" min="0">
       </label>
     </fieldset>
   
     <button type="submit">Toast me!</button>
   </form>
   
-  <script src="../toast.js" type="module"></script>
-  <script src="index.js" type="module"></script>
+  <script src="../dist/toast.min.js"></script>
+  <script src="index.min.js"></script>
 </body>
 </html>
