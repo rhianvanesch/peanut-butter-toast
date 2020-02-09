@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Peanut butter toast</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="../toast.css">
+</head>
+<body>
+  <h1><code>peanut-butter-toast</code></h1>
+
+  <form id="toast-settings">
+    <fieldset>
+      <legend>Position</legend>
+
+      <label for="position-left-top">
+        <input type="radio" name="position" id="position-left-top" value="left-top">
+        Left top
+      </label>
+  
+      <label for="position-center-top">
+        <input type="radio" name="position" id="position-center-top" value="center-top" checked>
+        Centre top
+      </label>
+  
+      <label for="position-right-top">
+        <input type="radio" name="position" id="position-right-top" value="right-top">
+        Right top
+      </label>
+  
+      <label for="position-left-bottom">
+        <input type="radio" name="position" id="position-left-bottom" value="left-bottom">
+        Left bottom
+      </label>
+  
+      <label for="position-center-bottom">
+        <input type="radio" name="position" id="position-center-bottom" value="center-bottom">
+        Centre bottom
+      </label>
+  
+      <label for="position-right-bottom">
+        <input type="radio" name="position" id="position-right-bottom" value="right-bottom">
+        Right bottom
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Type</legend>
+
+      <label for="type-error">
+        <input type="radio" name="type" id="type-error" value="error">
+        Error
+      </label>
+  
+      <label for="type-info">
+        <input type="radio" name="type" id="type-info" value="info" checked>
+        Info
+      </label>
+  
+      <label for="type-success">
+        <input type="radio" name="type" id="type-success" value="success">
+        Success
+      </label>
+  
+      <label for="type-warning">
+        <input type="radio" name="type" id="type-warning" value="warning">
+        Warning
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Dismiss</legend>
+
+      <label for="auto-dismiss">
+        <input type="checkbox" name="autoDismiss" id="auto-dismiss" checked>
+        Auto-dismiss?
+      </label>
+
+      <label for="timeout">
+        Dismiss after (ms)
+        <input type="number" name="timeout" id="timeout" value="2000" min="0">
+      </label>
+    </fieldset>
+  
+    <button type="submit">Toast me!</button>
+  </form>
+  
+  <script src="../toast.js" type="module"></script>
+  <script src="index.js" type="module"></script>
+</body>
+</html>

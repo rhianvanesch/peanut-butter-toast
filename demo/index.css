@@ -1,0 +1,11 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
